@@ -1,0 +1,109 @@
+<div zf-modal="" id="summaryModal" class="large">
+        <div class="padding_modal" ng-class="{'padding_modal': reply}">
+
+          <div class="grid-container" ng-hide="dataDisplay">
+            <div class="text-center medium-12">
+              <h2 style="text-align:left;">Product</h2>
+              <h4 style="text-align:left;">Commercial Configuration</h4>
+            </div>
+          </div>
+
+          <div class="grid-container" style="overflow: auto;">
+            <div class="rows">
+              <div class="grid-content medium-4">
+                <h3>Product Code:</h3>
+                <h4><b>{{product.code}}</b></h4>
+              </div>
+              <div class="grid-content medium-4">
+                <h3>Product Version:</h3>
+                <h4><b>{{product.version}}</b></h4>
+              </div>
+              <div class="grid-content medium-4">
+                <h3>Publish:</h3>
+                <h4><b>{{product.versionPublish}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-6">
+                <h3>Product Owner Name</h3>
+                <h4><b>{{product.ownerNameContainer}}</b></h4>
+              </div>
+              <div class="grid-content medium-6">
+                <h3>Priority</h3>
+                <h4><b>{{product.priority}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-12">
+                <h3>Product Commercial Name</h3>
+                <h4><b>{{product.name}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-12"
+                <h3>Description</h3>
+                <h4><b>{{product.name}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-6">
+                <h3>Status</h3>
+              </div>
+              <div class="grid-content medium-6">
+                <h4><b>{{product.is-Active}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-12"
+                <h3>Price</h3>
+                <h4><b>{{product.price}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-6">
+                <h3>Start Period</h3>
+                <h4><b>{{product.start_Period}}</b></h4>
+              </div>
+              <div class="grid-content medium-6">
+                <h3>End Period</h3>
+                <h4><b>{{product.end_Period}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-6">
+                <h3>Subscription Period</h3>
+                <h4><b>{{product.start_Period}}</b></h4>
+              </div>
+              <div class="grid-content medium-6">
+                <h3>Subscription Period UOM</h3>
+                <h4><b>{{product.end_Period}}</b></h4>
+              </div>
+            </div>
+            <div class="rows">
+              <div class="grid-content medium-6">
+                <h3>Grace Period</h3>
+                <h4><b>{{product.start_Period}}</b></h4>
+              </div>
+              <div class="grid-content medium-6">
+                <h3>Grace Period UOM</h3>
+                <h4><b>{{product.end_Period}}</b></h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center medium-12">
+              <h4>YAKIN MAU SUBMIT?</h4>  
+          </div>
+
+          <div class="grid-block" style="padding-top: 1%" ng-hide="dataDisplay">
+            <div class="grid-content medium-6">
+              <a class="primary button expand" ng-click="submit()">Yes</a>
+            </div>
+            <div class="grid-content medium-6">
+              <a class="success button expand" ng-click="zf-close">No</a>
+            </div>
+          </div>
+          <span us-spinner="{radius:30, width:8, length: 16}" spinner-key="spinner-1" ></span>
+
+        </div>
+      </div>
